@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-  --primary-color:#302d4e ;
+  --primary-color: #302d4e;
   --secondary-color: #FFC300;
   --text-dark: #0e0d16;
   --text-light: #767268;
@@ -751,29 +751,30 @@ nav {
   .feedback__card {
     padding: 2rem 1.5rem;
   }
+
   .contact__container {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-  
+
   .contact__form {
     max-width: 700px;
     width: 100%;
     margin-bottom: 4rem;
   }
-  
+
   .form-group {
     margin-bottom: 1.5rem;
   }
-  
+
   .form-group label {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: 600;
   }
-  
+
   .form-group input,
   .form-group textarea {
     width: 100%;
@@ -782,7 +783,7 @@ nav {
     border-radius: 5px;
     font-size: 1rem;
   }
-  
+
   .contact__info {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -790,7 +791,7 @@ nav {
     width: 100%;
     margin-top: 4rem;
   }
-  
+
   .contact__card {
     background-color: var(--extra-light);
     padding: 2rem 1.5rem;
@@ -798,136 +799,148 @@ nav {
     text-align: center;
     transition: 0.3s ease;
   }
-  
+
   .contact__card:hover {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
   }
-  
+
   .contact__card i {
     font-size: 1.5rem;
     color: var(--secondary-color);
     margin-bottom: 1rem;
   }
-  
+
   .contact__card h4 {
     margin-bottom: 0.5rem;
     font-size: 1.125rem;
+
   }
-  .feedback__container {
-    padding-bottom: 4rem;
-  }
-  .feedback__card {
-    padding: 2rem 1.5rem;
-    border-radius: 0.5rem;
-    background-color: var(--extra-light);
-    transition: 0.3s ease;
-  }
-  .feedback__card:hover {
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-  }
-  .feedback__details {
-    margin-top: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .feedback__rating span {
-    color: goldenrod;
-  }
-  .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border-width: 0;
-  }
-  .btn i {
-    margin-right: 0.5rem;
-  }
+
+}
+
+.feedback__container {
+  padding-bottom: 4rem;
+}
+
+.feedback__card {
+  padding: 2rem 1.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--extra-light);
+  transition: 0.3s ease;
+}
+
+.feedback__card:hover {
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.feedback__details {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.feedback__rating span {
+  color: goldenrod;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.btn i {
+  margin-right: 0.5rem;
+}
+
+.news__grid {
+  display: grid;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+@media (min-width: 768px) {
   .news__grid {
-    display: grid;
-    gap: 2rem;
-    margin-top: 4rem;
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-  @media (min-width: 768px) {
-    .news__grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  
-  .news__card {
-    background-color: var(--extra-light);
-    border-radius: 10px;
-    overflow: hidden;
-    transition: 0.3s ease;
-  }
-  
-  .news__card:hover {
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  }
-  
-  .news__card img {
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  .news__card__content {
-    padding: 1.5rem;
-  }
-  
-  .news__category {
-    font-size: 0.75rem;
-    font-weight: bold;
-    color: var(--secondary-color);
-    text-transform: uppercase;
-    margin-bottom: 0.5rem;
-    display: inline-block;
-    padding: 0.25rem 0.75rem;
-    border-radius: 5px;
-    background-color: #fff;
-    border: 1px solid var(--secondary-color);
-    margin-bottom: 1rem;
-    display: block;
-  }
-  
-  .news__date {
-    display: block;
-    font-size: 0.85rem;
-    color: var(--text-light);
-    margin-bottom: 1rem;
-  }
-  
-  .read-more {
-    display: inline-flex;
-    align-items: center;
-    margin-top: 1rem;
-    color: var(--primary-color);
-    font-weight: 600;
-    transition: 0.3s;
-  }
-  
-  .read-more:hover {
-    color: var(--secondary-color);
-  }
-  
-  .read-more i {
-    margin-left: 0.5rem;
-  }
-  
-  .news__cta {
-    text-align: center;
-    margin-top: 4rem;
-  }
-  
-  .news__cta .btn {
-    margin-top: 1rem;
-  }
-  /* === News Section Styling === */
+}
+
+.news__card {
+  background-color: var(--extra-light);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.news__card:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.news__card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.news__card__content {
+  padding: 1.5rem;
+}
+
+.news__category {
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid var(--secondary-color);
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.news__date {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--text-light);
+  margin-bottom: 1rem;
+}
+
+.read-more {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 1rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.read-more:hover {
+  color: var(--secondary-color);
+}
+
+.read-more i {
+  margin-left: 0.5rem;
+}
+
+.news__cta {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.news__cta .btn {
+  margin-top: 1rem;
+}
+
+/* === News Section Styling === */
 
 .news__container {
   padding-top: 6rem;
@@ -946,7 +959,8 @@ nav {
 }
 
 .news__card {
-  background-color: var(--extra-light); /* Matches your site's light background */
+  background-color: var(--extra-light);
+  /* Matches your site's light background */
   border-radius: 10px;
   overflow: hidden;
   transition: box-shadow 0.3s ease;
@@ -1017,6 +1031,7 @@ nav {
 .read-more:hover {
   color: var(--secondary-color);
 }
+
 /* === Logo Styling === */
 
 .nav__logo {
@@ -1034,23 +1049,26 @@ nav {
   color: var(--text-dark);
 }
 
-}
 
 .nav__logo-img {
   width: 40px;
   height: 5px;
   object-fit: contain;
   border-radius: 8px;
-  background-color: rgb(255, 255, 255); /* Matches secondary color */
-  padding: 2px; /* Optional: adds space inside image if needed */
+  background-color: rgb(255, 255, 255);
+  /* Matches secondary color */
+  padding: 2px;
+  /* Optional: adds space inside image if needed */
 }
+
 @media (max-width: 768px) {
   .nav__logo a {
     font-size: 1.1rem;
   }
 
   .nav__logo-img {
-    width: 125px; /* Bigger on mobile */
+    width: 125px;
+    /* Bigger on mobile */
     height: 40px;
   }
 
@@ -1058,7 +1076,9 @@ nav {
   .nav__logo {
     gap: 0.25rem;
   }
-  /* === About Section Styling === */
+}
+
+/* === About Section Styling === */
 
 .about__container {
   padding: 6rem 1rem 4rem;
@@ -1170,6 +1190,7 @@ nav {
   color: var(--primary-color);
   transform: scale(1.1);
 }
+
 /* === Feedback Section Styling === */
 
 .feedback__container {
@@ -1290,6 +1311,7 @@ nav {
   color: var(--primary-color);
   transform: scale(1.1);
 }
+
 .form-group {
   margin-bottom: 1.5rem;
 }
@@ -1308,6 +1330,7 @@ nav {
   border-radius: 5px;
   font-size: 1rem;
 }
+
 .contact__container {
   padding-top: 6rem;
 }
@@ -1361,6 +1384,7 @@ nav {
   color: var(--secondary-color);
   margin-bottom: 1rem;
 }
+
 .subscribe__content {
   text-align: center;
   max-width: 600px;
@@ -1382,6 +1406,7 @@ nav {
   font-size: 1rem;
   color: green;
 }
+
 /* === Newsletter Thank You Modal === */
 
 .modal {
@@ -1440,9 +1465,17 @@ nav {
 
 /* Fade Animation */
 @keyframes fadeIn {
-  from { opacity: 0; transform: scale(0.9); }
-  to { opacity: 1; transform: scale(1); }
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
+
 .career__container {
   padding-top: 6rem;
 }
@@ -1482,16 +1515,19 @@ nav {
   border-radius: 5px;
   font-size: 1rem;
 }
+
 .form-message {
   margin-top: 1rem;
   font-size: 1rem;
   color: green;
 }
+
 .form-message {
   margin-top: 1rem;
   font-size: 1rem;
   color: green;
 }
+
 /* === Let's Chat Button - Sticky Mobile Fix === */
 .chat-button-wrapper {
   display: none;
@@ -1501,7 +1537,8 @@ nav {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: #FFC300; /* Gold */
+  background-color: #FFC300;
+  /* Gold */
   color: #000;
   padding: 14px 24px;
   border-radius: 30px;
@@ -1530,7 +1567,3 @@ nav {
     z-index: 1000;
   }
 }
-
-
-}
-
